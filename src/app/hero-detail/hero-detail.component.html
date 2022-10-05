@@ -1,0 +1,19 @@
+<div *ngIf="hero">
+<h2>{{ hero.name | uppercase}}</h2>
+<h4>details:</h4>
+<div><span>id: </span>{{hero.id}}</div>
+<div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+    
+<div id="wrapperOut">
+  <div id="wrapperIn">
+    <p>
+      <span>Porcentaje: </span>
+      {{porcentaje|percent:'3.10'}}
+    </p>
+  </div>
+</div>
+</div>
